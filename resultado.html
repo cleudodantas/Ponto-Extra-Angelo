@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Formulário</title>
+    <style>
+        /* Definindo variáveis de cores para fácil manutenção */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #16416d;
+            --text-color: #000000;
+            --header-footer-bg: #333;
+            --header-footer-text: #fff;
+            --input-border: #ccc;
+            --button-bg: #007bff;
+            --button-hover-bg: #0056b3;
+        }
+
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Estilo do corpo */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: var(--header-footer-text);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--button-hover-bg);
+        }
+
+        
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        main h2 {
+            margin-bottom: 20px;
+        }
+
+        .resultado {
+            width: 100%;
+            max-width: 600px;
+            background: #c4f2ff;
+            padding: 20px;
+            box-shadow: 0 4px 8px #006baa;
+            border-radius: 8px;
+            text-align: left; 
+
+        .resultado p {
+            margin-bottom: 10px;
+        }
+
+        .resultado p strong {
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--header-footer-bg);
+            color: var(--header-footer-text);
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Página Inicial</a></li>
+                <li><a href="resultado.html">Sobre</a></li>
+                <li><a href="resultado.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Resultado do Formulário</h2>
+        <div id="resultado" class="resultado">
+            <p id="nomeResultado">Nome:</p>
+            <p id="emailResultado">Email:</p>
+            <p id="mensagemResultado">Mensagem:</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
